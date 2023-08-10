@@ -1,0 +1,213 @@
+body{
+    margin:0px;
+    padding: 0;
+}
+.main-nav{
+    padding:0 40px;
+    background-color: rgb(253, 132, 132);
+    display: flex;
+    margin:0 80px;
+}
+.aside-bar{
+    margin: auto 0px auto auto;
+}
+ul{
+    display: flex;
+    margin-left: auto;
+}
+ul li {
+    list-style: none;
+    margin:auto 20px;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+}
+.toggle{
+    visibility: hidden;
+}
+@keyframes cover-animation {
+   0%{background-image: url(../img/Car_1.jpg);}
+   20%{background-image: url(../img/Car_1.2.jpg);}
+   30%{background-image: url(../img/Car_1.3.jpg);}
+   50%{background-image: url(../img/Car_2.1.jpg);}
+   60%{background-image: url(../img/Car_2.2.jpg);} 
+}
+.cover{
+    height: 50vh;
+    animation:  cover-animation 10s infinite;
+    background-image: url(../img/Car_4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover h1{
+    color:#fff;
+    font-size: 3em;
+    text-shadow: 4px 2px 8px #f57575;
+}
+.car-brand{
+    font-family:fantasy;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.car-models{
+    margin:0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.car-box{
+    margin:40px auto;
+}
+.car-img{
+   width: 360px;
+   border-radius: 20px;
+}
+.car-img:hover{
+   width: 370px;
+   cursor: pointer;
+}
+.car-description{
+    width: 360px;
+    margin:40px auto;
+    font-family:'Lucida Sans';
+}
+.car-name{
+    font-family: cursive;
+    color: rgb(253, 132, 132);
+}
+.sell-car{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.car-info{
+    background-color: rgb(253, 117, 140);
+    padding:20px 20px 25px 20px;
+    margin:40px auto;
+    border-radius: 10px;
+}
+.buy-button{
+    display: block;
+    margin: 5px auto;
+    background-color: rgb(164, 245, 164);
+    padding:5px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+}
+.heading-text{
+    text-align: center;
+    color: rgb(253, 132, 132);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.5em;
+    background-color: #f5757565;
+    box-shadow: 0px 0px 8px #6f6c6c;
+}
+input , textarea , .sub-btn{
+    margin: 3px 0px;
+    width: 100%;
+    padding:8px;
+    font-size: 1em;
+    text-align: center;
+}
+#contactDescription{
+    color: rgb(253, 132, 132);
+}
+
+.contact-car{
+    width: 60%;
+    margin: 10px auto;
+}
+button[type="submit"]{
+    font-size: 1.4em;
+    background-color:rgb(253, 132, 132);
+    color: #ffff;
+    width: 50%;
+    border: none;
+    padding:8px;
+    border-radius: 10px;
+}
+button[type="submit"]:hover{
+    transform: scale(1.1);
+}
+footer{
+    background-color: #f5757565;
+    color:rgb(253, 132, 132);
+    bottom: 0px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    margin: 40px 0px 0px 0px;
+}
+footer:hover{
+    box-shadow: 0px 0px 8px #6f6c6c;
+}
+footer p{
+    width: 50%;
+    margin: 0px auto;
+}
+.down-bar{
+    margin:0px 0px 0px auto;
+    padding:0px; 
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+ }
+@media only screen and (max-width:679px){
+    .main-nav , .car-models{
+        padding:0 10px;
+        margin:0px;
+    }
+    .main-nav > ul {
+        display: none;
+    }
+    .toggle{
+        background-image: url(../img/toggle.png);
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin:auto 0px auto auto;
+        visibility: visible;
+        border-radius: 10px;
+    }
+    .cover{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin: 0px;
+    }
+    .car-brand{
+        font-family:fantasy;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 1.3em;
+    }
+    footer p{
+        width: 80%;
+        font-size: 1em;
+        margin: 0px auto;
+    }
+    .aside-bar{
+        display:block;
+        padding:20px 0px;
+        width: 100%;
+        background-color:#f5757565;
+        font-size: 1.5em;
+        text-align: center;
+        overflow: visible;
+        height: auto;
+        letter-spacing: 2px;
+        transition: width 2s, height 2s, transform 2s;
+    }
+    .aside-bar a{
+        color:rgb(253, 132, 132);
+    }
+}
