@@ -210,4 +210,7 @@ footer p{
     .aside-bar a{
         color:rgb(253, 132, 132);
     }
+    .car-img{
+       width: 340px;
+    }
 }
